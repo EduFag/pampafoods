@@ -1,0 +1,68 @@
+.capa {
+    background-image: url('/img/sobreimg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 60vh;
+  }
+
+.diferenciais {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.diferenciais img {
+    width: 250px;
+}
+
+.negocios {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 5%;
+}
+
+.negocios .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.negocios .card img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.mapamundipampa {
+    width: 1000px;
+}
+
+.maparspampa {
+    width: 500px;
+    border-radius: 20px;
+    margin-bottom: 10%;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.5); /* ajuste aqui a opacidade */
+    z-index: 1;
+    margin-top: 17vh;
+  }
+  
+  .section1-inicial > *:not(.bg-overlay) {
+    position: relative;
+    z-index: 2;
+  }

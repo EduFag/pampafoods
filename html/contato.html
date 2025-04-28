@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    main {
+      width: 100%;
+      height: auto;
+    }
+
+    .img {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 5%;
+      flex-direction: column;
+      margin-top: -5%;
+    }
+
+    .img img {
+      width: 400px;
+      margin-bottom: 50px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 83vh;
+      width: 100%;
+      padding: 150px;
+    }
+
+    .content h1 {
+      margin-bottom: 20px;
+      font-size: 60px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .field {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #000000;
+      border-radius: 25px;
+      font-size: 16px;
+      background-color: rgb(48, 48, 48);
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    .fundo {
+      background-image: url('https://img.freepik.com/fotos-gratis/pedacos-de-carne-fresca-crua-isolados-em-preto-em-placa-de-pedra-vista-lateral-espelhada_346278-817.jpg?t=st=1745838245~exp=1745841845~hmac=9a00611572ced980863585aea459791efba9975488fdec4ba6c8bbb8383cfaf3&w=1380');
+    }
+
+    .field {
+      cursor: pointer;
+    }
+
+    #mensagemResposta {
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    .contato-whats a {
+      text-decoration: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      background-color: rgb(48, 48, 48);
+      margin-left: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contato-whats a:hover {
+      background-color: #bf9853;
+    }
+
+    .contato-whats a i {
+      margin-left: 5px;
+    }
+
+    @media (max-width: 800px) {
+      .textfield {
+        width: 100%;
+        margin-top: -15px;
+      }
+
+      .textfield h1 {
+        margin: 0;
+        text-align: center;
+        font-size: 45px;
+        margin-left: 5%;
+      }
+
+      main {
+        height: auto;
+        margin-top: -32px;
+      }
+
+      .content {
+        margin-top: 100px;
+      }
+
+      .box {
+        flex-direction: column;
+      }
+
+      .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .img img {
+        width: 250px;
+      }
+
+      .contato {
+        margin-top: 70px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fundo"></div>
+  <header class="header">
+    <div class="logo">
+      <img src="/img/logo-header.png" alt="">
+    </div>
+
+    <nav class="mobile-menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </nav>
+
+    <nav class="nav-list">
+      <a href="../index.html">Inicial</a>
+      <a href="/html/sobre.html">Sobre</a>
+      <a href="/html/produtos.html">Produtos</a>
+      <a href="/html/pampa_fish.html">Pampa Fish</a>
+      <a href="/html/contato.html">Contato</a>
+    </nav>
+    <div class="ligue">
+      <div class="phone">
+        <i class="fa-solid fa-phone-flip" style="color: #bf9853;"></i>
+      </div>
+
+      <div class="numberphone">
+        <p>Ligue Agora <br> +55 (51) 3337-2900</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="content">
+      <div class="img" data-aos="zoom-in-down">
+        <img src="/img/ave.png" alt="">
+        <div class="contato-whats">
+          <a href="">Atacado <i class="fa-brands fa-whatsapp"></i></a>
+          <a href="">Varejo <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="contato">
+        <h1 data-aos="zoom-in-down">Formulário de contato</h1>
+        <form class="form" id="formContato">
+          <input class="field" name="name" placeholder="Nome">
+          <input class="field" name="email" placeholder="E-mail">
+          <textarea class="field" name="message" id="message" placeholder="Digite sua mensagem aqui"></textarea>
+          <input class="field" type="submit" value="Enviar">
+        </form>
+        <div id="mensagemResposta"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-distribuicao">
+      <div class="footer-left">
+        <h1>Informações de contato</h1>
+
+        <img src="/img/logo_pampa.png" alt="">
+
+        <i class="fa-solid fa-location-dot" style="color: #bf9853;"></i>
+
+        <p>
+          <a href=""> CNPJ: 08.327.161/0001-04</a>
+          <a href="">Avenida Farrapos nº 2475</a>
+          <a href="">Porto Alegre - Bairro Floresta</a>
+          <a href="">CEP: 90220-006</a>
+          <a href="">Fone: +55 51 3337.2900</a>
+          <a href="">contato@pampafoods.com.br</a>
+        </p>
+
+      </div>
+      <div class="footer-center">
+        <div class="horarios">
+          <h1>Horários de Atendimento</h1>
+          <p>Segunda &nbsp; ................................. &nbsp; <span>8:00 - 18:00</span></p>
+          <p>Terça &nbsp; .......................................... &nbsp; <span>8:00 - 18:00</span></p>
+          <p>Quarta &nbsp; ...................................... &nbsp; <span>8:00 - 18:00</span></p>
+          <p>Quinta &nbsp; ...................................... &nbsp; <span>8:00 - 18:00</span></p>
+          <p>Sexta &nbsp; ......................................... &nbsp; <span>8:00 - 18:00</span></p>
+          <p>Sábado e Domingo &nbsp; ........ &nbsp; <span>8:00 - 18:00</span></p>
+        </div>
+
+      </div>
+      <div class="footer-right">
+        <h1>Redes Sociais</h1>
+        <div class="footer-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

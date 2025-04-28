@@ -1,0 +1,89 @@
+.fundo {
+    background-image: url('/img/fundosalmao.jpeg');
+}
+
+.capa {
+    background-image: url('/img/fundosalmao2.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 60vh;
+}
+
+.header {
+    background-color: #e67039;
+}
+
+.capa img {
+    margin-top: -10vh;
+}
+
+section .card {
+    background-color: transparent;
+    border: none;
+}
+
+.card-body .card-title {
+    color: black;
+}
+.card-body .card-text {
+    color: rgb(44, 44, 44);
+}
+
+.img-fluid {
+    border-radius: 100px;
+    width: 100px;
+}
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.galeria {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.grid-galeria {
+    column-count: 4;
+    /* Número de colunas */
+    column-gap: 5px;
+    /* Espaço entre as colunas */
+}
+
+.grid-galeria img {
+    width: 100%;
+    margin-bottom: 5px;
+    display: block;
+    break-inside: avoid;
+    /* Para evitar que a imagem quebre entre as colunas */
+    object-fit: cover;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.286); /* ajuste aqui a opacidade */
+    z-index: 1;
+    margin-top: 17vh;
+  }
+  
+  .capa > *:not(.bg-overlay) {
+    position: relative;
+    z-index: 2;
+  }
