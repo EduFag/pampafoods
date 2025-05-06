@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/components.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+
     <link rel="stylesheet" href="/styles/sobre.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -31,9 +34,9 @@
 
         <nav class="nav-list">
             <a href="../index.html">Inicial</a>
-            <a href="/pages/sobre.html">Sobre</a>
+            <a href="/pages/sobre.html" style="color: #bf9853;">Sobre</a>
             <a href="/pages/produtos.html">Produtos</a>
-            <a href="/pages/pampa_fish.html">Pampa Fish</a>
+            <a href="/pages/pampa_fish.html">PampaFoods Fish</a>
             <a href="/pages/contato.html">Contato</a>
         </nav>
         <div class="ligue">
@@ -52,11 +55,11 @@
     <main>
         <section>
             <div class="container">
-                <div class="box-img-produtos">
+                <div class="box-img">
                     <img src="/img/sobreimg.jpg" alt="">
                 </div>
-                <div class="textfield-produtos">
-                    <h1>Sobre a Pampa Foods</h1>
+                <div class="textfield">
+                    <h1>Sobre a PampaFoods</h1>
                     <p>A Pampafoods é o resultado da evolução natural do Grupo PAMPA, um empreendimento
                         genuinamente brasileiro fundado em 1986 com as empresas PAMPACARNE e PAMPAMEAT. Desde o início,
                         nosso
@@ -81,11 +84,14 @@
                 </div>
                 <div class="carrossel-container" data-aos="fade-up">
                     <div class="carrossel" id="carrossel">
-                        <img src="/img/logopampabeef.png" alt="Logo 1">
-                        <img src="/img/PampaFoods Fries_Logo_BlackSquare.jpg" alt="Logo 2">
-                        <img src="/img/logoLord.png" alt="Logo 3">
-                        <img src="/img/LOGO_PAMPAFISH_page-0001-removebg-preview.png" alt="Logo 4">
-                        <img src="/img/Pampafoods Beef (Logo) (4)_Página_1.jpg" alt="">
+                        <img src="/img/logopampabeef.png" alt="Logo 1" class="carrossel-img">
+                        <img src="/img/PampaFoods Fries_Logo_BlackSquare.jpg" alt="Logo 2" class="carrossel-img">
+                        <a href="https://www.lordalimentos.com.br/" target="_blank">
+                            <img src="/img/logoLord.png" alt="Logo 3" class="carrossel-img">
+                        </a>
+                        <img src="/img/LOGO_PAMPAFISH_page-0001-removebg-preview.png" alt="Logo 4"
+                            class="carrossel-img">
+                        <img src="/img/Pampafoods Beef (Logo) (4)_Página_1.jpg" alt="" class="carrossel-img">
                     </div>
                     <button class="prev" onclick="mudarSlide(-1)">❮</button>
                     <button class="next" onclick="mudarSlide(1)">❯</button>
@@ -93,7 +99,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="mvo">
             <h1>Missão</h1>
             <p>Fornecer proteínas de alta qualidade para o mercado global, garantindo segurança,
                 rastreabilidade e excelência em cada etapa do processo. Buscamos conectar fornecedores e
@@ -114,8 +120,8 @@
         </section>
         <section>
             <div class="container">
-                <div class="box-img-produtos">
-                    <img src="/img/mapa-pampa-2-01-2048x944 (1).png" alt=""  data-aos="fade-up">
+                <div class="box-img">
+                    <img src="/img/mapa-pampa-2-01-2048x944 (1).png" alt="" data-aos="fade-up">
                 </div>
                 <div class="textfield">
                     <h1 data-aos="fade-left">Parcerias globais e excelência operacional</h1>
@@ -136,7 +142,7 @@
 
         <section style="padding-bottom: 150px">
             <div class="container">
-                <div class="textfield" style="width: 60%; margin-top: 5%;">
+                <div class="textfield">
                     <h1 data-aos="fade-right">Sul do Brasil</h1>
                     <p>Além da presença global, temos uma conexão especial com o Sul do Brasil,
                         região onde
@@ -154,9 +160,9 @@
                 </div>
                 <div class="carrossel-container" data-aos="fade-up">
                     <div class="carrossel" id="carrossel">
-                        <img src="/img/sul1.jpg" alt="Logo 1">
-                        <img src="/img/sul2.jpg" alt="Logo 2">
-                        <img src="/img/sul3.jpg" alt="Logo 3">
+                        <img src="/img/sul1.jpg" alt="Logo 1" class="carrossel-img">
+                        <img src="/img/sul2.jpg" alt="Logo 2" class="carrossel-img">
+                        <img src="/img/sul3.jpg" alt="Logo 3" class="carrossel-img">
                     </div>
                     <button class="prev" onclick="mudarSlide(-1)">❮</button>
                     <button class="next" onclick="mudarSlide(1)">❯</button>
@@ -184,16 +190,20 @@
 
             </div>
             <div class="footer-center">
+                <nav class="menu-inferior">
+                    <h1>Menu</h1>
+                    <p>
+                        <a href="../index.html">Inicial</a>
+                        <a href="/pages/sobre.html">Sobre</a>
+                        <a href="/pages/pampa_fish.html">PampaFoods Fish</a>
+                        <a href="/pages/produtos.html">Produtos</a>
+                        <a href="/pages/contato.html">Contato</a>
+                    </p>
+                </nav>
                 <div class="horarios">
                     <h1>Horários de Atendimento</h1>
-                    <p>Segunda &nbsp; ................................. &nbsp; <span>8:00 - 18:00</span></p>
-                    <p>Terça &nbsp; .......................................... &nbsp; <span>8:00 - 18:00</span></p>
-                    <p>Quarta &nbsp; ...................................... &nbsp; <span>8:00 - 18:00</span></p>
-                    <p>Quinta &nbsp; ...................................... &nbsp; <span>8:00 - 18:00</span></p>
-                    <p>Sexta &nbsp; ......................................... &nbsp; <span>8:00 - 18:00</span></p>
-                    <p>Sábado e Domingo &nbsp; ........ &nbsp; <span>8:00 - 18:00</span></p>
+                    <p>Segunda a sexta&nbsp; ..........&nbsp; <span>8:00 - 18:00</span></p>
                 </div>
-
             </div>
             <div class="footer-right">
                 <h1>Redes Sociais</h1>
@@ -202,7 +212,15 @@
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
-
+                <div class="filiais">
+                    <h1>Filiais</h1>
+                    <p>
+                        <a href="">Canoas-RS (CD)</a>
+                        <a href="">São Paulo-SP</a>
+                        <a href="">Itajaí-SC</a>
+                        <a href="">Brasília-DF</a>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
@@ -211,6 +229,7 @@
         AOS.init();
     </script>
     <script src="/js/carrossel.js"></script>
+    <script src="/js/mobile-navbar.js"></script>
 
 </body>
 

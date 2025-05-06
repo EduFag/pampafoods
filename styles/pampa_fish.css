@@ -43,35 +43,6 @@ section .card {
     border-radius: 50%;
 }
 
-.galeria {
-    padding: 20px;
-    background-color: #f8f9fa;
-}
-
-.grid-galeria {
-    column-count: 4;
-    /* Número de colunas */
-    column-gap: 5px;
-    /* Espaço entre as colunas */
-}
-
-.grid-galeria img {
-    width: 100%;
-    margin-bottom: 5px;
-    display: block;
-    break-inside: avoid;
-    /* Para evitar que a imagem quebre entre as colunas */
-    object-fit: cover;
-}
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
-}
-
 .bg-overlay {
     position: absolute;
     top: 0;
@@ -87,3 +58,18 @@ section .card {
     position: relative;
     z-index: 2;
   }
+
+  @media (max-width: 768px) {
+    .capa img {
+        margin: 0;
+        width: 300px;
+        z-index: 1 !important;
+    }
+
+    .capa h1 {
+        font-size: 20px;
+        padding: 7%;
+        z-index: 1 !important;
+    }
+}
+

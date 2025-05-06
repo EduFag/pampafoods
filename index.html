@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PampaFoods - Inicial</title>
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/layout.css">
+
     <link rel="stylesheet" href="styles/inicial.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -31,10 +34,10 @@
             </nav>
 
             <nav class="nav-list">
-                <a href="">Inicial</a>
+                <a href="" style="color: #bf9853;">Inicial</a>
                 <a href="pages/sobre.html">Sobre</a>
                 <a href="pages/produtos.html">Produtos</a>
-                <a href="pages/pampa_fish.html">Pampa Fish</a>
+                <a href="pages/pampa_fish.html">PampaFoods Fish</a>
                 <a href="pages/contato.html">Contato</a>
             </nav>
             <div class="ligue">
@@ -52,7 +55,6 @@
             <img src="img/ave.png" alt="" class="ave" data-aos="fade-right">
             <img src="img/pampafoods-escrita.png" alt="" class="escrita" data-aos="fade-right">
             <h1 data-aos="fade-right">Fornecedor mundial de alimentos.</h1>
-            <!-- <p style="color: #e3e3e3;">Desde 1986, fornecendo qualidade e segurança para todos os mercados.</p> -->
         </div>
     </section>
 
@@ -60,19 +62,18 @@
     <main>
         <section>
             <div class="container">
-                <div class="box-img-produtos" data-aos="fade-up">
+                <div class="box-img" data-aos="fade-up">
                     <img src="img/catalogo1.jpg" alt="">
                 </div>
                 <div class="textfield">
                     <h1>Conheça nossos produtos</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto consequatur nisi iste dolorum.
-                        Consectetur at nihil error porro tenetur sed sunt iure. Similique impedit quaerat molestiae, facilis
-                        odit eius ab?
-                        Cumque atque veritatis amet quam animi eum corrupti asperiores aut consequatur, earum ratione
-                        distinctio, incidunt maxime id officiis similique tempora reprehenderit nam dolore architecto sint
-                        sapiente quae illum! Eius, ut.
-                        Corru</p>
-                    <a href="" class="button">Conheça nossos produtos</a>
+                    <p>Somos uma empresa global no setor de alimentos, reconhecida pela excelência e confiança.
+                        Nossos produtos combinam sabor, qualidade e segurança em cada etapa do processo.
+                        Trabalhamos com ingredientes selecionados e tecnologia de ponta.
+                        Valorizamos parcerias duradouras e sustentáveis com clientes e fornecedores.
+                        Preservamos os mais altos padrões internacionais em tudo o que fazemos.
+                        Experimente o melhor da nossa linha e sinta a diferença.</p>
+                    <a href="/pages/produtos.html" class="button">Conheça nossos produtos</a>
                 </div>
             </div>
         </section>
@@ -80,38 +81,45 @@
             <h1 data-aos="fade-up">Prêmios e Certificações</h1>
             <img src="img/premios.png" alt="" class="premios">
         </section>
-        <section>
+        <section style="padding-bottom: 5%;">
             <div class="container">
                 <div class="textfield">
                     <h1>Sobre Nós</h1>
                     <p>A PAMPAFOODS é o resultado da evolução natural do Grupo PAMPA, um empreendimento genuinamente
-                        brasileiro fundado em 1986 com as empresas PAMPACARNE e PAMPAMEAT. Nosso propósito desde o início
+                        brasileiro fundado em 1986 com as empresas PAMPACARNE e PAMPAMEAT. Nosso propósito desde o
+                        início
                         foi claro: desenvolver negócios sólidos e sustentáveis no segmento de carnes bovinas.
-                        Com o tempo, nossas operações cresceram para abranger a exportação e a importação, levando à criação
-                        da PAMPAFOODS, que hoje ocupa uma posição consolidada como referência na comercialização de proteína
+                        Com o tempo, nossas operações cresceram para abranger a exportação e a importação, levando à
+                        criação
+                        da PAMPAFOODS, que hoje ocupa uma posição consolidada como referência na comercialização de
+                        proteína
                         animal e alimentos congelados.</p>
-                    <a href="" class="button">Saiba mais</a>
+                    <a href="/pages/sobre.html" class="button">Saiba mais</a>
                 </div>
-                <div class="box-img-produtos" data-aos="fade-up">
+                <div class="box-img" data-aos="fade-up">
                     <img src="img/sobreimg.jpg" alt="">
                 </div>
             </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9069550029885!2d-51.20746991988179!3d-30.010827965084058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979950ec0a19f%3A0x17e280c6c1f848c3!2sAv.%20Farrapos%2C%202475%20-%20Floresta%2C%20Porto%20Alegre%20-%20RS%2C%2090230-260!5e0!3m2!1spt-BR!2sbr!4v1745517219131!5m2!1spt-BR!2sbr"
-                width="1350" height="400" style="border:0; padding: 0; margin-top: 0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="mapa" data-aos="fade-up"></iframe>
         </section>
         <div class="bg-overlay"></div>
-        <section style="padding: 0; background-image: url(/img/pampafishcaixaprodutos.jpg); background-attachment: fixed; background-position: center;">
+        <section
+            style="padding: 0; background-image: url(/img/pampafishcaixaprodutos.jpg); background-attachment: fixed; background-position: center;">
             <div class="section-pampa-fish" style="background-color: rgba(0, 0, 0, 0.363);">
-                <h1 data-aos="fade-up">Pampa Foods Fish</h1>
-                <p>Lançada em 2022, esta marca representa nossa operação própria de pescados. Os produtos da Pampafoods Fish
+                <h1 data-aos="fade-up">PampaFoods Fish</h1>
+                <p>Lançada em 2022, esta marca representa nossa operação própria de pescados. Os produtos da Pampafoods
+                    Fish
                     são
                     comercializados tanto internamente pela Lord Atacadista de Alimentos quanto exportados para diversos
                     países.
                 </p>
-                <a href="" class="button">Saiba Mais</a>
+                <a href="/pages/pampa_fish.html" class="button">Saiba Mais</a>
             </div>
+        </section>
+        <section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9069550029885!2d-51.20746991988179!3d-30.010827965084058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979950ec0a19f%3A0x17e280c6c1f848c3!2sAv.%20Farrapos%2C%202475%20-%20Floresta%2C%20Porto%20Alegre%20-%20RS%2C%2090230-260!5e0!3m2!1spt-BR!2sbr!4v1745517219131!5m2!1spt-BR!2sbr"
+                height="400" style="border:0; padding: 0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="mapa" data-aos="fade-up"></iframe>
         </section>
 
     </main>
@@ -136,25 +144,37 @@
 
             </div>
             <div class="footer-center">
+                <nav class="menu-inferior">
+                    <h1>Menu</h1>
+                    <p>
+                        <a href="">Inicial</a>
+                        <a href="/pages/sobre.html">Sobre</a>
+                        <a href="/pages/pampa_fish.html">PampaFoods Fish</a>
+                        <a href="/pages/produtos.html">Produtos</a>
+                        <a href="/pages/contato.html">Contato</a>
+                    </p>
+                </nav>
                 <div class="horarios">
                     <h1>Horários de Atendimento</h1>
-                    <p>Segunda &nbsp; ................................. &nbsp; <span>8:00 - 18:00</span></p>
-                    <p>Terça &nbsp; .......................................... &nbsp; <span>8:00 - 18:00</span></p>
-                    <p>Quarta &nbsp; ...................................... &nbsp; <span>8:00 - 18:00</span></p>
-                    <p>Quinta &nbsp; ...................................... &nbsp; <span>8:00 - 18:00</span></p>
-                    <p>Sexta &nbsp; ......................................... &nbsp; <span>8:00 - 18:00</span></p>
-                    <p>Sábado e Domingo &nbsp; ........ &nbsp; <span>8:00 - 18:00</span></p>
+                    <p>Segunda a sexta&nbsp; ..........&nbsp; <span>8:00 - 18:00</span></p>
                 </div>
-
             </div>
             <div class="footer-right">
                 <h1>Redes Sociais</h1>
                 <div class="footer-icons">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/pampafoods/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/pampafoods/posts/?feedView=all" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5551981827144" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
-
+                <div class="filiais">
+                    <h1>Filiais</h1>
+                    <p>
+                        <a href="">Canoas-RS (CD)</a>
+                        <a href="">São Paulo-SP</a>
+                        <a href="">Itajaí-SC</a>
+                        <a href="">Brasília-DF</a>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
@@ -162,28 +182,7 @@
         AOS.init();
     </script>
     <script src="/js/mobile-navbar.js"></script>
-    <script>
-        const imagens = [
-            'img/fundobatata.jpeg',
-            'https://img.freepik.com/fotos-gratis/embarque-em-seco_1398-242.jpg?t=st=1746041424~exp=1746045024~hmac=7c180ce6f969a1f31e0dedc7617c618319fd2a4fc6bca8f9fcfe0eca9d1f52b7&w=1380',
-            'img/fundo3.avif',
-            'img/fundosalmao.jpeg',
-            'img/fundo1.jpg'
-        ];
-
-        let index = 0;
-        const section = document.getElementById('background-carousel');
-
-        function trocarImagem() {
-            const bg = section.querySelector('::before');
-            section.style.setProperty('--bg-url', `url(${imagens[index]})`);
-            section.style.backgroundImage = `url('${imagens[index]}')`;
-
-            index = (index + 1) % imagens.length;
-        }
-
-        setInterval(trocarImagem, 7000);
-    </script>
+    <script src="/js/background-carrossel.js"></script>
 </body>
 
 </html>

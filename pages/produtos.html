@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/components.css">
+  <link rel="stylesheet" href="/styles/layout.css">
+
   <link rel="stylesheet" href="/styles/produtos.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,54 +35,54 @@
     <nav class="nav-list">
       <a href="../index.html">Inicial</a>
       <a href="/pages/sobre.html">Sobre</a>
-      <a href="/pages/produtos.html">Produtos</a>
-      <a href="/pages/pampa_fish.html">Pampa Fish</a>
+      <a href="/pages/produtos.html" style="color: #bf9853;">Produtos</a>
+      <a href="/pages/pampa_fish.html">PampaFoods Fish</a>
       <a href="/pages/contato.html">Contato</a>
     </nav>
     <div class="ligue">
       <div class="phone">
         <i class="fa-solid fa-phone-flip" style="color: #bf9853;"></i>
       </div>
-
       <div class="numberphone">
-        <p>Ligue Agora <br> +55 (51) 3337-2900</p>
+        <p style="margin: 0; line-height: 1.2;">Ligue Agora<br>+55 (51) 3337-2900</p>
       </div>
     </div>
   </header>
   <section class="capa">
     <div class="bg-overlay"></div>
-    <h1 data-aos="fade-right" style="margin-top: 10%;">A Pampafoods está sempre comprometida em oferecer os mais diversos tipos de produtos e cortes para satisfazer os
+    <h1 data-aos="fade-right" style="margin-top: 10%;">A Pampafoods está sempre comprometida em oferecer os mais
+      diversos tipos de produtos e cortes para satisfazer os
       nossos clientes.</h1>
   </section>
   <section>
     <h1 style="color: #fff;">Nosso Catálogo</h1>
     <div class="card-grid">
-      <div class="cardproduto" data-aos="fade-up">
+      <div class="card" data-aos="fade-up">
         <img src="/img/catalogo1.jpg" alt="Imagem 1">
         <h1>Cortes Bovinos</h1>
         <p class="descricao">Excelência em cada corte.</p>
       </div>
-      <div class="cardproduto" data-aos="fade-up">
+      <div class="card" data-aos="fade-up">
         <img src="/img/catalogo2.jpg" alt="Imagem 2">
         <h1>Miúdos Bovinos</h1>
         <p class="descricao">Opções ricas em sabor e versatilidade.</p>
       </div>
-      <div class="cardproduto" data-aos="fade-up">
+      <div class="card" data-aos="fade-up">
         <img src="/img/catalogo3.jpg" alt="Imagem 3">
         <h1>Cortes de Frango</h1>
         <p class="descricao">Qualidade e maciez em cada pedaço.</p>
       </div>
-      <div class="cardproduto" data-aos="fade-up">
+      <div class="card" data-aos="fade-up">
         <img src="/img/catalogo4.jpg" alt="Imagem 4">
         <h1>Cortes Suínos</h1>
         <p class="descricao">Variedade e suculência para diferentes preparos.</p>
       </div>
-      <div class="cardproduto" data-aos="fade-up">
+      <div class="card" data-aos="fade-up">
         <img src="/img/catalogo5.jpg" alt="Imagem 5">
         <h1>Cortes de Cordeiro</h1>
         <p class="descricao">Sabor e tradição para paladares exigentes.</p>
       </div>
-      <div class="cardproduto" data-aos="fade-up">
+      <div class="card" data-aos="fade-up">
         <img src="/img/catalogo6.jpg" alt="Imagem 5">
         <h1>Pampafoods Fish</h1>
         <p class="descricao">Nossa linha completa de produtos pescados.</p>
@@ -109,16 +112,20 @@
 
       </div>
       <div class="footer-center">
+        <nav class="menu-inferior">
+          <h1>Menu</h1>
+          <p>
+            <a href="../index.html">Inicial</a>
+            <a href="/pages/sobre.html">Sobre</a>
+            <a href="/pages/pampa_fish.html">PampaFoods Fish</a>
+            <a href="/pages/produtos.html">Produtos</a>
+            <a href="/pages/contato.html">Contato</a>
+          </p>
+        </nav>
         <div class="horarios">
           <h1>Horários de Atendimento</h1>
-          <p>Segunda &nbsp; ................................. &nbsp; <span>8:00 - 18:00</span></p>
-          <p>Terça &nbsp; .......................................... &nbsp; <span>8:00 - 18:00</span></p>
-          <p>Quarta &nbsp; ...................................... &nbsp; <span>8:00 - 18:00</span></p>
-          <p>Quinta &nbsp; ...................................... &nbsp; <span>8:00 - 18:00</span></p>
-          <p>Sexta &nbsp; ......................................... &nbsp; <span>8:00 - 18:00</span></p>
-          <p>Sábado e Domingo &nbsp; ........ &nbsp; <span>8:00 - 18:00</span></p>
+          <p>Segunda a sexta&nbsp; ..........&nbsp; <span>8:00 - 18:00</span></p>
         </div>
-
       </div>
       <div class="footer-right">
         <h1>Redes Sociais</h1>
@@ -127,7 +134,15 @@
           <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-
+        <div class="filiais">
+          <h1>Filiais</h1>
+          <p>
+            <a href="">Canoas-RS (CD)</a>
+            <a href="">São Paulo-SP</a>
+            <a href="">Itajaí-SC</a>
+            <a href="">Brasília-DF</a>
+          </p>
+        </div>
       </div>
     </div>
   </footer>
@@ -136,6 +151,8 @@
   <script>
     AOS.init();
   </script>
+
+  <script src="/js/mobile-navbar.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

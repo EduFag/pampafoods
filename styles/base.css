@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-principal: #000000;
+    --cor-secudaria-um: #bf9853;
+    --cor-secundaria-dois: #832f2f;
+    --fonte-principal: "Roboto", sans-serif;
+    --fonte-titulos: "Oswald", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--cor-principal);
+}
+
+p {
+    font-size: 20px;
+    color: #e3e3e3;
+}
+
+a {
+    font-size: 13pt;
+    color: #fff;
+}
+
+h1 {
+    letter-spacing: 2px;
+    font-size: 2.8em;
+    color: #fff;
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+li {
+    color: #fff;
+}
+
+ul {
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+}

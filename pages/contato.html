@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/components.css">
+  <link rel="stylesheet" href="/styles/layout.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -23,7 +25,6 @@
       justify-content: flex-start;
       align-items: center;
       margin-right: 5%;
-      flex-direction: column;
       margin-top: -5%;
     }
 
@@ -43,7 +44,7 @@
 
     .content h1 {
       margin-bottom: 20px;
-      font-size: 60px;
+      font-size: 50px;
     }
 
     .form {
@@ -55,17 +56,22 @@
       padding: 10px;
       margin-bottom: 15px;
       border: 1px solid #000000;
-      border-radius: 25px;
       font-size: 16px;
       background-color: rgb(48, 48, 48);
     }
 
-    textarea {
-      height: 150px;
+    .imput {
+      cursor: pointer;
+      color: #e3e3e3;
     }
 
-    .field {
-      cursor: pointer;
+    .button {
+      text-transform: capitalize;
+      color: #e3e3e3;
+    }
+
+    textarea {
+      height: 150px;
     }
 
     #mensagemResposta {
@@ -73,17 +79,10 @@
       color: #fff;
     }
 
-    .contato-whats a {
-      text-decoration: none;
-      padding: 10px 25px;
-      border-radius: 25px;
-      background-color: rgb(48, 48, 48);
-      margin-left: 15px;
-      transition: background-color 0.3s ease;
-    }
-
-    .contato-whats a:hover {
-      background-color: #bf9853;
+    .contato-whats {
+      margin-top: 5%;
+      display: flex;
+      gap: 10px;
     }
 
     .contato-whats a i {
@@ -91,25 +90,26 @@
     }
 
     @media (max-width: 800px) {
+      .content {
+        flex-direction: column;
+        height: auto;
+        margin-top: 100px;
+        padding: 5%;
+      }
+
       .textfield {
         width: 100%;
         margin-top: -15px;
       }
 
-      .textfield h1 {
-        margin: 0;
-        text-align: center;
-        font-size: 45px;
-        margin-left: 5%;
+      .contato h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
       }
 
       main {
         height: auto;
         margin-top: -32px;
-      }
-
-      .content {
-        margin-top: 100px;
       }
 
       .box {
@@ -127,7 +127,7 @@
       }
 
       .contato {
-        margin-top: 70px;
+        width: 100%;
       }
 
     }
@@ -149,10 +149,10 @@
 
     <nav class="nav-list">
       <a href="../index.html">Inicial</a>
-      <a href="/html/sobre.html">Sobre</a>
-      <a href="/html/produtos.html">Produtos</a>
-      <a href="/html/pampa_fish.html">Pampa Fish</a>
-      <a href="/html/contato.html">Contato</a>
+      <a href="/pages/sobre.html">Sobre</a>
+      <a href="/pages/produtos.html">Produtos</a>
+      <a href="/pages/pampa_fish.html">PampaFoods Fish</a>
+      <a href="/pages/contato.html" style="color: #bf9853;">Contato</a>
     </nav>
     <div class="ligue">
       <div class="phone">
@@ -168,10 +168,6 @@
     <section class="content">
       <div class="img" data-aos="zoom-in-down">
         <img src="/img/ave.png" alt="">
-        <div class="contato-whats">
-          <a href="">Atacado <i class="fa-brands fa-whatsapp"></i></a>
-          <a href="">Varejo <i class="fa-brands fa-whatsapp"></i></a>
-        </div>
       </div>
       <div class="contato">
         <h1 data-aos="zoom-in-down">Formulário de contato</h1>
@@ -179,8 +175,12 @@
           <input class="field" name="name" placeholder="Nome">
           <input class="field" name="email" placeholder="E-mail">
           <textarea class="field" name="message" id="message" placeholder="Digite sua mensagem aqui"></textarea>
-          <input class="field" type="submit" value="Enviar">
+          <input class="field imput" type="submit" value="Enviar">
         </form>
+        <div class="contato-whats">
+          <a href="" class="button">Atacado <i class="fa-brands fa-whatsapp"></i></a>
+          <a href="" class="button">Varejo <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
         <div id="mensagemResposta"></div>
     </section>
   </main>
@@ -205,16 +205,20 @@
 
       </div>
       <div class="footer-center">
+        <nav class="menu-inferior">
+          <h1>Menu</h1>
+          <p>
+            <a href="../index.html">Inicial</a>
+            <a href="/pages/sobre.html">Sobre</a>
+            <a href="/pages/pampa_fish.html">PampaFoods Fish</a>
+            <a href="/pages/produtos.html">Produtos</a>
+            <a href="/pages/contato.html">Contato</a>
+          </p>
+        </nav>
         <div class="horarios">
           <h1>Horários de Atendimento</h1>
-          <p>Segunda &nbsp; ................................. &nbsp; <span>8:00 - 18:00</span></p>
-          <p>Terça &nbsp; .......................................... &nbsp; <span>8:00 - 18:00</span></p>
-          <p>Quarta &nbsp; ...................................... &nbsp; <span>8:00 - 18:00</span></p>
-          <p>Quinta &nbsp; ...................................... &nbsp; <span>8:00 - 18:00</span></p>
-          <p>Sexta &nbsp; ......................................... &nbsp; <span>8:00 - 18:00</span></p>
-          <p>Sábado e Domingo &nbsp; ........ &nbsp; <span>8:00 - 18:00</span></p>
+          <p>Segunda a sexta&nbsp; ..........&nbsp; <span>8:00 - 18:00</span></p>
         </div>
-
       </div>
       <div class="footer-right">
         <h1>Redes Sociais</h1>
@@ -223,7 +227,15 @@
           <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-
+        <div class="filiais">
+          <h1>Filiais</h1>
+          <p>
+            <a href="">Canoas-RS (CD)</a>
+            <a href="">São Paulo-SP</a>
+            <a href="">Itajaí-SC</a>
+            <a href="">Brasília-DF</a>
+          </p>
+        </div>
       </div>
     </div>
   </footer>
@@ -231,6 +243,9 @@
   <script>
     AOS.init();
   </script>
+
+  <script src="/js/mobile-navbar.js"></script>
+  <script src="/js/contato.js"></script>
 </body>
 
 </html>
