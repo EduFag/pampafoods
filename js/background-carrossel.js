@@ -3,7 +3,7 @@ const imagens = [
     'img/embarque-em-seco.jpg',
     'img/fundo3.avif',
     'img/fundosalmao.jpeg',
-    'img/fundo1.jpg'
+    'img/fundo1.jpg',
 ];
 
 let index = 0;
