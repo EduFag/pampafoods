@@ -405,12 +405,11 @@ footer {
         flex-direction: column;
         gap: 5px;
         margin: 0;
-        padding-right: 5%;
     }
 
     .header .ligue .numberphone p {
         font-size: 10px;
-        text-align: right;
+        text-align: left;
     }
 
     .logo-nav {
