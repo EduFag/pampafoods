@@ -379,7 +379,6 @@ footer {
     .mobile-menu {
         display: block;
         z-index: 3;
-        margin-left: 25px;
     }
 
     .nav-list.active {
@@ -402,10 +401,11 @@ footer {
     }
 
     .header .ligue {
-        width: 35%;
+        width: 25%;
         flex-direction: column;
         gap: 5px;
         margin: 0;
+        padding-right: 5%;
     }
 
     .header .ligue .numberphone p {
