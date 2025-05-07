@@ -410,6 +410,7 @@ footer {
     .header .ligue .numberphone p {
         font-size: 10px;
         text-align: right;
+        -webkit-text-size-adjust: none;
     }
 
     .logo-nav {
