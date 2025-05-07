@@ -40,9 +40,8 @@
     margin-top: 1%;
 }
 
-.pampa p {
+.pampa h1 {
     color: white;
-    font-size: 27px;
     font-weight: bold;
 }
 
@@ -95,6 +94,16 @@
     text-align: center;
 }
 
+.section-pampa-fish h1 {
+    color: #ffffff;
+}
+
+.section-pampa-fish .button{
+    background-color: #ffffff;
+    border: none;
+    color: black;
+}
+
 @media (max-width: 768px) {
     .landing-page {
         background-attachment: scroll;
@@ -124,6 +133,8 @@
 
     .sct-fish {
         background-attachment: scroll;
+        background-image: url(/img/galeriaPampaFish4.jpg);
+        background-size: contain;
     }
 
     .mapa {

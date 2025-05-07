@@ -43,7 +43,7 @@ h1 {
     color: #fff;
     text-align: center;
     font-family: var(--fonte-titulos);
-    font-style: italic;
+    color: var(--cor-secudaria-um);
     margin-bottom: 20px;
 }
 
@@ -57,7 +57,7 @@ ul {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 35px;
+        font-size: 30px;
         margin-top: 20px;
     }
     p {
