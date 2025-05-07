@@ -104,6 +104,8 @@ button.next {
 @media (max-width: 768px) {
     .button {
         margin-bottom: 20px;
+        width: 350px;
+        font-size: 15px;
     }
 
     .carrossel-container {

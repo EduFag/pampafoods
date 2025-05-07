@@ -32,6 +32,9 @@
 }
 
 @media (max-width: 768px) {
+  .capa {
+    background-attachment: scroll;
+  }
   .capa h1 {
     font-size: 20px;
     z-index: 1 !important;

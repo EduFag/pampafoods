@@ -48,6 +48,9 @@
 }
 
 @media (max-width: 768px) {
+    .capa {
+        background-attachment: scroll;
+    }
     .mvo {
         padding-left: 10%;
         padding-right: 10%;

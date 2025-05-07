@@ -34,7 +34,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 10px; /* cria espaço entre os elementos */
+    gap: 10px;
+    /* cria espaço entre os elementos */
 }
 
 .textfield h1 {
@@ -68,14 +69,12 @@ section {
     width: 100vw;
     height: 100vh;
     background-color: #121212;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     position: fixed;
     z-index: -1;
-    background-image: url(
-        /img/pedacos-de-carne-fresca-crua-isolados-em-preto-em-placa-de-pedra-vista-lateral-espelhada_346278-817.jpg
-    );
+    background-image: url(/img/pedacos-de-carne-fresca-crua-isolados-em-preto-em-placa-de-pedra-vista-lateral-espelhada_346278-817.jpg
+);
 }
 
 .header {
@@ -157,10 +156,13 @@ header.active .line1 {
     transition: 0.3s;
     background-color: #fff;
 }
+
 header.active .line2 {
-    opacity: 0;;
+    opacity: 0;
+    ;
     transition: 0.3s;
 }
+
 header.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
     transition: 0.3s;
@@ -217,8 +219,8 @@ footer {
 }
 
 .footer-left i {
-   font-size: 35px;
-   margin-top: 5%;
+    font-size: 35px;
+    margin-top: 5%;
 }
 
 .footer-center {
@@ -337,6 +339,10 @@ footer {
     width: 100%;
 }
 
+.logo-nav {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .nav-list {
         z-index: 2;
@@ -348,11 +354,13 @@ footer {
         height: 100vh;
         background-color: var(--cor-principal);
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        display: none;
+        display: flex;
+        padding: 0 60px;
+        gap: 20px;
     }
 
     .nav-list a {
@@ -365,7 +373,7 @@ footer {
     }
 
     .nav-list a:hover {
-      color: var(--cor-secudaria-um);
+        color: var(--cor-secudaria-um);
     }
 
     .mobile-menu {
@@ -404,12 +412,19 @@ footer {
         text-align: right;
     }
 
+    .logo-nav {
+        margin-left: -20px;
+        margin-bottom: 50px;
+        margin-top: -200px;
+        display: inline;
+    }
+
     main.none {
         display: none;
     }
 
     footer.none {
-      display: none;
+        display: none;
     }
 
     section {
