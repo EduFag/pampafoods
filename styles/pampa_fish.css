@@ -28,19 +28,14 @@ section .card {
 }
 .card-body .card-text {
     color: rgb(44, 44, 44);
-}
-
-.img-fluid {
-    border-radius: 100px;
-    width: 100px;
+    font-size: 16px;
 }
 
 .card-img-top {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
     object-position: center;
-    border-radius: 50%;
 }
 
 .bg-overlay {
