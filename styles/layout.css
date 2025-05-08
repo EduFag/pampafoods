@@ -74,7 +74,7 @@ section {
     background-size: cover;
     position: fixed;
     z-index: -1;
-    background-image: url(https://img.freepik.com/fotos-gratis/plano-de-fundo-texturizado-de-concreto-grunge-preto_53876-124541.jpg?t=st=1746642044~exp=1746645644~hmac=8871a0ef1ff700440488cdd5bbe75353540b2c291a2fe579734ac0b29009006f&w=1380
+    background-image: url(/img/fundoescuro.avif
 );
 }
 
@@ -94,7 +94,7 @@ section {
 }
 
 .logo img {
-    width: 160px;
+    width: 140px;
 }
 
 .nav-list {

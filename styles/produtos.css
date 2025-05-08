@@ -10,10 +10,6 @@
   color: #fff;
 }
 
-.header {
-  background-color: var(--cor-principal);
-}
-
 .bg-overlay {
   position: absolute;
   top: 0;
