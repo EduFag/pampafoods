@@ -63,6 +63,13 @@
     transition: transform 0.5s ease, filter 0.5s ease;
 }
 
+.img100w {
+    object-fit: cover;
+    padding: 0 20px;
+}
+
+
+
 .carrossel-img:hover {
     transform: scale(1.05);
     /* leve zoom */
@@ -99,5 +106,14 @@ button.next {
 
     .carrossel-container {
         width: 100%;
+    }
+
+    .carrossel-img {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .card-grid .card {
+        margin-bottom: 50px;
     }
 }
