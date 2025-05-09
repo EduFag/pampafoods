@@ -75,9 +75,10 @@
 
 .sct-fish {
     padding: 0;
-    background-image: url(/img/pampafishcaixaprodutos.jpg);
+    background-image: url(/img/fundopeixe.jpeg);
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
 }
 
 .section-pampa-fish {
