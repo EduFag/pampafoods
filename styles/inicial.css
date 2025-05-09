@@ -42,7 +42,8 @@
 
 .pampa h1 {
     color: white;
-    font-weight: bold;
+    font-weight: lighter;
+    letter-spacing: 5px;
 }
 
 .premios {
@@ -92,6 +93,7 @@
 
 .section-pampa-fish p {
     text-align: center;
+    font-weight: normal;
 }
 
 .section-pampa-fish h1 {

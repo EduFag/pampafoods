@@ -30,6 +30,7 @@ body {
 p {
     font-size: 20px;
     color: #e3e3e3;
+    font-weight: lighter;
 }
 
 a {
@@ -45,6 +46,7 @@ h1 {
     font-family: var(--fonte-titulos);
     color: var(--cor-secudaria-um);
     margin-bottom: 20px;
+    font-weight: normal;
 }
 
 li {

@@ -8,6 +8,7 @@
 
 .capa h1 {
   color: #fff;
+  font-weight: lighter;
 }
 
 .bg-overlay {
@@ -25,6 +26,25 @@
 .capa>*:not(.bg-overlay) {
   position: relative;
   z-index: 2;
+}
+
+#card-1 {
+  background-image: url(/img/catalogo1.jpg);
+}
+#card-2 {
+  background-image: url(/img/catalogo2.jpg);
+}
+#card-3 {
+ background-image: url(/img/catalogo3.jpeg);
+}
+#card-4 {
+ background-image: url(/img/catalogo4.jpg);
+}
+#card-5 {
+ background-image: url(/img/catalogo5.jpeg);
+}
+#card-6 {
+  background-image: url(/img/catalogo6.jpeg);
 }
 
 @media (max-width: 768px) {
