@@ -51,12 +51,21 @@
     padding-left: 5%;
     padding-right: 5%;
 }
+
 @media (max-width: 768px) {
     .capa {
         background-attachment: scroll;
     }
+
     .mvo {
         padding-left: 10%;
         padding-right: 10%;
     }
 }
+
+/* .parcerias {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-right: 70px;
+} */

@@ -7,12 +7,12 @@ $nome = addslashes($_POST['name']);
 $email = addslashes($_POST['email']);
 $mensagem = addslashes($_POST['message']);
 
-$to = "contato@lordalimentos.com.br";
-$subject = "Contato - Lord Alimentos";
+$to = "contato@pampafoods.com.br";
+$subject = "Contato - PampaFoods";
 $body = "Nome: ".$nome. "\r\n".
         "Email: ".$email. "\r\n".
         "Mensagem: ".$mensagem;
-$header = "From:website@lordalimentos.com.br"."\r\n".
+$header = "From:website@pampafoods.com.br"."\r\n".
             "Reply-To:".$email."\r\n".
             "X=Mailer:PHP/".phpversion();
 
